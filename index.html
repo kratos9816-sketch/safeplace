@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>A Little Universe Called Kirthikha ❤️</title>
+  <meta name="description" content="A cinematic, interactive digital universe dedicated to Kirthikha — an eternal celebration of love, intimacy, memories and peace.">
+  <meta name="theme-color" content="#050505">
+
+  <!-- Favicon Heart -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Starfield Canvas (Persistent Across Universe) -->
+  <canvas id="main-starfield-canvas" class="canvas-bg"></canvas>
+
+  <!-- ==============================================================================
+       FLOATING AUDIO CONTROLLER
+       ============================================================================== -->
+  <aside class="audio-controller" id="audio-controller" aria-label="Audio player controller">
+    <button class="audio-btn" id="audio-toggle-btn" aria-label="Toggle background melody" title="Toggle Celestial Melody (Shortcut: M)">
+      <div class="eq-bars" aria-hidden="true">
+        <span class="eq-bar"></span>
+        <span class="eq-bar"></span>
+        <span class="eq-bar"></span>
+        <span class="eq-bar"></span>
+      </div>
+      <span id="audio-status-text">Melody: Paused</span>
+    </button>
+  </aside>
+
+  <!-- ==============================================================================
+       SECTION 2: OPENING EXPERIENCE (FULLSCREEN CINEMATIC INTRO)
+       ============================================================================== -->
+  <div class="opening-scene" id="opening-scene">
+    <canvas id="opening-canvas"></canvas>
+    
+    <div class="opening-content">
+      <div class="opening-pretitle">An Eternal Constellation</div>
+      <h1 class="opening-quote">
+        "In a universe of 8 billion people,<br>
+        my favourite coincidence was <span class="highlight-you">YOU</span>."
+      </h1>
+      <p class="opening-subtitle">A little universe, created just for you.</p>
+
+      <button id="btn-enter-universe" class="btn-celestial" type="button">
+        <span>Enter My Universe</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==============================================================================
+       MAIN NAVIGATION BAR
+       ============================================================================== */ -->
+  <nav class="universe-nav" id="universe-nav">
+    <a href="#home" class="nav-brand">
+      <span>Kirthikha</span>
+      <span class="heart-pulse">❤️</span>
+    </a>
+
+    <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu">
+      ☰
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#languages" class="nav-link">340 Languages</a></li>
+      <li><a href="#reasons" class="nav-link">100 Reasons</a></li>
+      <li><a href="#memories" class="nav-link">Our Memories</a></li>
+      <li><a href="#fear" class="nav-link">My Deepest Fear</a></li>
+      <li><a href="#comfort" class="nav-link">When Unloved</a></li>
+      <li><a href="#letter" class="nav-link">Heart Letter</a></li>
+      <li><a href="#surprise" class="nav-link">One Surprise</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==============================================================================
+       MAIN UNIVERSE CONTAINER
+       ============================================================================== -->
+  <div class="universe-wrapper" id="universe-wrapper">
+
+    <!-- ============================================================================
+         SECTION 3: HOME / OUR UNIVERSE HERO
+         ============================================================================ -->
+    <section class="hero-section" id="home">
+      <div class="hero-constellation-emblem">
+        <div class="hero-orbital-ring"></div>
+        <div class="hero-star-core">✦</div>
+      </div>
+
+      <h1 class="hero-title">
+        A Little Universe Called<br>
+        <span>Kirthikha</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Every little thing in this universe somehow reminds me of you.
+      </p>
+
+      <!-- 6 Interactive Cards Navigation Hub -->
+      <div class="cards-grid">
+        
+        <!-- Card 1: 340 Languages -->
+        <a href="#languages" class="universe-card">
+          <div>
+            <div class="card-top">
+              <span class="card-numeral">CONSTELLATION I</span>
+              <div class="card-icon">✦</div>
+            </div>
+            <h2 class="card-title">340 Languages of Love</h2>
+            <p class="card-desc">One feeling. 340 verified ways across the globe to tell you how deeply you are loved.</p>
+          </div>
+          <div class="card-action">
+            <span>Explore Languages</span>
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <!-- Card 2: 100 Reasons -->
+        <a href="#reasons" class="universe-card">
+          <div>
+            <div class="card-top">
+              <span class="card-numeral">CONSTELLATION II</span>
+              <div class="card-icon">✉</div>
+            </div>
+            <h2 class="card-title">100 Reasons Why I Choose You</h2>
+            <p class="card-desc">100 handwritten notes capturing the small and vast truths that make my soul belong to you.</p>
+          </div>
+          <div class="card-action">
+            <span>Read Reasons</span>
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <!-- Card 3: Our Memories -->
+        <a href="#memories" class="universe-card">
+          <div>
+            <div class="card-top">
+              <span class="card-numeral">CONSTELLATION III</span>
+              <div class="card-icon">◈</div>
+            </div>
+            <h2 class="card-title">Our Little Memories</h2>
+            <p class="card-desc">A personal timeline of our first meeting, late-night laughter, and moments frozen in starlight.</p>
+          </div>
+          <div class="card-action">
+            <span>View Gallery</span>
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <!-- Card 4: My Deepest Fear -->
+        <a href="#fear" class="universe-card" style="border-color: rgba(255, 255, 255, 0.18);">
+          <div>
+            <div class="card-top">
+              <span class="card-numeral">CONSTELLATION IV</span>
+              <div class="card-icon">🖤</div>
+            </div>
+            <h2 class="card-title">My Deepest Fear</h2>
+            <p class="card-desc">The raw, unspoken fear of losing you, feeling lost in the dark, and why my entire sanity holds onto your love.</p>
+          </div>
+          <div class="card-action">
+            <span>Read Confession</span>
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <!-- Card 4: When You Feel Unloved -->
+        <a href="#comfort" class="universe-card">
+          <div>
+            <div class="card-top">
+              <span class="card-numeral">CONSTELLATION V</span>
+              <div class="card-icon">🫂</div>
+            </div>
+            <h2 class="card-title">When You Feel Unloved</h2>
+            <p class="card-desc">A peaceful sanctuary with floating stars and gentle words on days when the world feels heavy.</p>
+          </div>
+          <div class="card-action">
+            <span>Find Sanctuary</span>
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <!-- Card 5: A Letter From My Heart -->
+        <a href="#letter" class="universe-card">
+          <div>
+            <div class="card-top">
+              <span class="card-numeral">CONSTELLATION VI</span>
+              <div class="card-icon">❤️</div>
+            </div>
+            <h2 class="card-title">A Letter From My Heart</h2>
+            <p class="card-desc">An intimate, sealed personal confession written solely for you to read at your own quiet pace.</p>
+          </div>
+          <div class="card-action">
+            <span>Open Sealed Letter</span>
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+        <!-- Card 6: One Last Surprise -->
+        <a href="#surprise" class="universe-card">
+          <div>
+            <div class="card-top">
+              <span class="card-numeral">CONSTELLATION VII</span>
+              <div class="card-icon">♾️</div>
+            </div>
+            <h2 class="card-title">One Last Surprise</h2>
+            <p class="card-desc">A cinematic secret formed by gathering cosmic stardust into our forever constellation.</p>
+          </div>
+          <div class="card-action">
+            <span>Unlock Secret</span>
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ============================================================================
+         SECTION 4: 340 LANGUAGES OF LOVE
+         ============================================================================ -->
+    <section id="languages">
+      <div class="section-header">
+        <div class="section-badge">Constellation I • Global Harmonies</div>
+        <h2 class="section-title">One feeling. 340 different ways to say it.</h2>
+        <p class="section-subtitle">
+          In every tongue spoken under these stars, every word whispers the very same truth back to you.
+        </p>
+      </div>
+
+      <div class="languages-container">
+        <div class="language-display-card">
+          <div class="lang-meta">
+            <span class="lang-badge" id="lang-badge">Tamil • South Asia</span>
+            <span class="lang-counter" id="lang-counter">Discovered 1 of 340</span>
+          </div>
+
+          <div class="lang-script-wrapper">
+            <div class="lang-script" id="lang-script">நான் உன்னை காதலிக்கிறேன்</div>
+            <div class="lang-romanized" id="lang-romanized">"Naan unnai kaadhalikkiren"</div>
+            <div class="lang-meaning" id="lang-meaning">I love you</div>
+          </div>
+
+          <div class="languages-controls">
+            <button class="btn-tell-love" id="btn-tell-love" type="button">
+              <span>Tell me you love me</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+            </button>
+
+            <button class="btn-secondary" id="btn-copy-lang" type="button" title="Copy this phrase">
+              <span>Copy Phrase</span>
+            </button>
+
+            <button class="btn-secondary" id="btn-explore-langs" type="button">
+              <span>Explore All 340</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================
+         SECTION 5: 100 REASONS WHY I CHOOSE YOU
+         ============================================================================ -->
+    <section id="reasons">
+      <div class="section-header">
+        <div class="section-badge">Constellation II • Heartfelt Truths</div>
+        <h2 class="section-title">100 little reasons, one beautiful person.</h2>
+        <p class="section-subtitle">
+          Small handwritten notes for every single reason my heart feels blessed, grounded, and endlessly peaceful with you.
+        </p>
+      </div>
+
+      <div class="reasons-container">
+        <div class="reason-letter-card">
+          <div class="reason-card-header">
+            <span class="reason-counter-badge" id="reason-counter-badge">Reason 01 of 100</span>
+            <div class="reason-actions">
+              <button class="btn-icon" id="btn-fav-reason" type="button" title="Bookmark favorite reason">
+                ♥
+              </button>
+              <button class="btn-icon" id="btn-random-reason" type="button" title="Random Surprise Reason">
+                🎲
+              </button>
+            </div>
+          </div>
+
+          <div class="reason-body">
+            <p class="reason-text" id="reason-text">
+              "The way my overthinking mind goes completely quiet the moment you are next to me."
+            </p>
+          </div>
+
+          <div class="reason-card-footer">
+            <span class="reason-author-tag">Always yours, Kirthikha</span>
+
+            <div class="reason-nav-buttons">
+              <button class="btn-secondary" id="btn-prev-reason" type="button" style="padding:10px 18px;">
+                ← Prev
+              </button>
+              <button class="btn-secondary" id="btn-next-reason" type="button" style="padding:10px 18px;">
+                Next →
+              </button>
+            </div>
+          </div>
+
+          <div class="progress-track">
+            <div class="progress-fill" id="reason-progress-bar"></div>
+          </div>
+        </div>
+
+        <div style="margin-top:28px;">
+          <button class="btn-secondary" id="btn-view-all-reasons" type="button">
+            View All 100 Reasons Archive
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================
+         SECTION 6: OUR LITTLE MEMORIES
+         ============================================================================ -->
+    <section id="memories">
+      <div class="section-header">
+        <div class="section-badge">Constellation III • Frozen In Time</div>
+        <h2 class="section-title">Our Little Memories</h2>
+        <p class="section-subtitle">
+          Photographs, gentle moments, and sacred milestones written across the constellations of our story.
+        </p>
+      </div>
+
+      <div class="memories-container">
+        <!-- Filter Tabs -->
+        <div class="memory-filters" id="memory-filters">
+          <button class="filter-btn active" data-filter="all">All Memories</button>
+          <button class="filter-btn" data-filter="beginning">The Beginning</button>
+          <button class="filter-btn" data-filter="late">Late Nights</button>
+          <button class="filter-btn" data-filter="touch">Touch &amp; Warmth</button>
+          <button class="filter-btn" data-filter="peace">Peace &amp; Safe Place</button>
+          <button class="filter-btn" data-filter="sweet">Silly &amp; Sweet</button>
+          <button class="filter-btn" data-filter="forever">Forever</button>
+        </div>
+
+        <!-- Memories Grid Container -->
+        <div class="memories-grid" id="memories-grid">
+          <!-- Dynamically populated from js/memories.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================
+         SECTION: MY DEEPEST FEAR & THE VULNERABLE TRUTH
+         ============================================================================ -->
+    <section id="fear">
+      <div class="section-header">
+        <div class="section-badge">Constellation IV • The Vulnerable Truth</div>
+        <h2 class="section-title">The Silent Fear of Losing You</h2>
+        <p class="section-subtitle">
+          Behind every smile and every tender moment, there is a quiet panic inside my heart — because without you, I am completely lost in the dark.
+        </p>
+      </div>
+
+      <div class="fear-container">
+        <!-- Interactive Vulnerability Narrative Cards -->
+        <div class="fear-confession-stack">
+
+          <!-- Card 1: Daily Panic -->
+          <div class="fear-card">
+            <span class="fear-card-badge">01 • The Daily Quiet Panic</span>
+            <h3 class="fear-card-title">"What if one day, you decide to walk away?"</h3>
+            <p class="fear-card-text">
+              I don't think you truly understand how terrified I am of losing you. In the middle of an ordinary day, in random quiet moments when the world pauses, a suffocating whisper creeps into my chest: <em>"What if she leaves? What if one day she realizes she doesn't want me anymore?"</em> It makes my hands cold. It makes my heart race. I try to act strong and calm on the outside, but the mere thought of waking up in a world where Kirthikha isn't mine leaves me feeling like a lost child with nowhere to go.
+            </p>
+            <div class="fear-quote-tag">"Enaku eppome, ella neramum oru chinna bayam irukummm... Nee enna vendam nu solliduviyaoo, enna vittu poiduviyaoo nu..."</div>
+          </div>
+
+          <!-- Card 2: Only Medicine -->
+          <div class="fear-card">
+            <span class="fear-card-badge">02 • You Are My Only Quiet Place</span>
+            <h3 class="fear-card-title">"My mind never stops screaming... except in your arms."</h3>
+            <p class="fear-card-text">
+              I am an overthinker. My brain constantly runs at a hundred miles an hour, analyzing every fear, every flaw, every doubt. But the moment you are next to me? <strong>Complete silence.</strong> Mind la oru sound kooda irukathu. The night I rested my head on your chest and fell asleep was the deepest peace I have ever known in my entire existence. You are not just someone I love — you are the only medicine that calms my soul. If you ever leave, that silence disappears, and I am drowned in chaos forever.
+            </p>
+            <div class="fear-quote-tag">"Anaaa nee en pakathula iruntha mattum pothummm, enaku avlooooo amaithiya irukummm."</div>
+          </div>
+
+          <!-- Card 3: Vulnerability & Power -->
+          <div class="fear-card">
+            <span class="fear-card-badge">03 • Loving You With No Armor</span>
+            <h3 class="fear-card-title">"You hold the power to destroy me with a single goodbye."</h3>
+            <p class="fear-card-text">
+              Nejama soldren ma, you're a part of me. When you smile, I feel alive. When you are sad, my whole day falls apart. I have given you every key to my heart, leaving zero defense, zero walls, and zero protection. Loving you this deeply is the sweetest blessing of my life, but it is also the most terrifying thing I have ever done — because if you walk away, you don't just break my heart; you take away my identity, my peace, and my reason to smile.
+            </p>
+            <div class="fear-quote-tag">"I can feel what you feel... Nee thaan enoda innoru half maaaa. ❤️"</div>
+          </div>
+
+          <!-- Card 4: My Only Plea -->
+          <div class="fear-card highlight-plea">
+            <span class="fear-card-badge">04 • My Only Plea To Your Heart</span>
+            <h3 class="fear-card-title">"Promise me we will fight for each other, always."</h3>
+            <p class="fear-card-text">
+              I don't need a grand fairytale. I don't care about anything material in this universe. I just want to protect you, pamper you when you are tired, cook together in our silly kitchen, and fall asleep on your chest every single night. When days get hard, when we get angry, when we disagree — scream at me, scold me, cry with me, but <strong>please never let go of my hand</strong>. We will fix whatever breaks, as long as you stay right by my side.
+            </p>
+            <div class="fear-quote-tag">"Endha avasaramum illaama namaloda azhgaana world la namma rendu perum happy ah irukalaammmm. ❤️"</div>
+          </div>
+
+        </div>
+
+        <!-- Interactive Reassurance Section For Kirthikha -->
+        <div class="fear-reassurance-box" id="fear-reassurance-box">
+          <div class="reassurance-heart-icon">🫂</div>
+          <h3 class="reassurance-title">A Message Just For You, Kirthikha</h3>
+          <p class="reassurance-sub">
+            If you ever see me quiet, insecure, or holding onto you too tight... this is why. If your heart chooses me as its forever home, seal this promise right now.
+          </p>
+
+          <button class="btn-reassure-heart" id="btn-reassure-heart" type="button">
+            <span>I Promise I'm Never Leaving You ❤️</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+          </button>
+
+          <!-- Reassurance Revealed Confirmation -->
+          <div class="reassurance-revealed" id="reassurance-revealed">
+            <h4>"You never have to be scared, my love."</h4>
+            <p>
+              "In a universe of 8 billion people, my heart chose you and only you. I see your fears, I see how much you love me, and I promise you with every breath: <strong>I am staying. You are my safe place, my husband, and my forever home.</strong> Put your head on my chest and rest peacefully. We are in this together, for all eternity. ♾️❤️"
+            </p>
+            <div class="reassurance-timestamp" id="reassurance-timestamp">Sealed in the stars • Forever</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================================
+         SECTION 7: WHEN YOU FEEL UNLOVED (SAFE HAVEN)
+         ============================================================================ -->
+    <section id="comfort">
+      <div class="section-header">
+        <div class="section-badge">Constellation IV • Safe Haven</div>
+        <h2 class="section-title">On days when you doubt how much you mean to me, come here.</h2>
+        <p class="section-subtitle">
+          Take a deep, slow breath. Let the noise outside quiet down. You are deeply cherished, now and for all eternity.
+        </p>
+      </div>
+
+      <div class="comfort-container">
+        <!-- Breathing Visualizer -->
+        <div class="breathing-embrace-container">
+          <div class="breathing-orb" id="breathing-orb">
+            <span class="breathing-orb-inner">Breathe</span>
+          </div>
+          <p class="breathing-guide-text">"Inhale peace... Exhale doubt... You are safe in my universe."</p>
+        </div>
+
+        <!-- Sequential Messages Box -->
+        <div class="comfort-messages-box">
+          <p class="comfort-message-text" id="comfort-message-text">You are loved.</p>
+          <div class="comfort-step-dots" id="comfort-step-dots"></div>
+        </div>
+
+        <!-- Emergency Affirmation Pills -->
+        <div class="comfort-pills-title">Gentle Words Whenever You Need Them</div>
+        <div class="comfort-pills">
+          <button class="comfort-pill" data-note="anxious">When you feel anxious</button>
+          <button class="comfort-pill" data-note="missing">When you miss me</button>
+          <button class="comfort-pill" data-note="sleep">When you can't sleep</button>
+          <button class="comfort-pill" data-note="doubt">When you doubt yourself</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================
+         SECTION 8: A LETTER FROM MY HEART
+         ============================================================================ -->
+    <section id="letter">
+      <div class="section-header">
+        <div class="section-badge">Constellation V • Sacred Words</div>
+        <h2 class="section-title">A Letter From My Heart</h2>
+        <p class="section-subtitle">
+          Words spoken with raw vulnerability and tender love, meant only for your beautiful eyes.
+        </p>
+      </div>
+
+      <div class="letter-section-container">
+        <!-- Sealed Envelope Card -->
+        <div class="envelope-interactive-wrapper" id="envelope-wrapper">
+          <div class="envelope-card">
+            <div class="wax-seal">K ❤️</div>
+            <h3 class="envelope-inscription">For Kirthikha, with all my love.</h3>
+            <div class="envelope-hint">
+              <span>Click to break seal &amp; read</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Revealed Letter Box -->
+        <div class="revealed-letter-box" id="revealed-letter-box">
+          <div class="letter-header">
+            <h3 class="letter-recipient-title">To My Dearest Kirthikha ❤️</h3>
+            <span class="letter-counter-tag" id="letter-counter-tag">Paragraph 1 of 8</span>
+          </div>
+
+          <div class="letter-paragraph-viewer">
+            <p class="letter-paragraph-text" id="letter-para-text">
+              <!-- Paragraph content loaded dynamically -->
+            </p>
+          </div>
+
+          <div class="letter-controls">
+            <button class="btn-secondary" id="btn-toggle-full-letter" type="button">
+              Read Full Continuous Letter
+            </button>
+
+            <div class="letter-nav-group">
+              <button class="btn-secondary" id="btn-prev-para" type="button" style="padding:10px 18px;">
+                ← Prev
+              </button>
+              <button class="btn-secondary" id="btn-next-para" type="button" style="padding:10px 18px;">
+                Next →
+              </button>
+            </div>
+          </div>
+
+          <!-- Full Letter Continuous Container -->
+          <div class="full-letter-container" id="full-letter-container">
+            <!-- Full letter paragraphs -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================
+         SECTION 9: THE FINAL SURPRISE
+         ============================================================================ -->
+    <section id="surprise">
+      <div class="section-header">
+        <div class="section-badge">Constellation VI • The Climax</div>
+        <h2 class="section-title">One Last Surprise</h2>
+        <p class="section-subtitle">
+          Before you leave this little universe, there is one final celestial secret waiting just for you.
+        </p>
+      </div>
+
+      <div class="surprise-section-container">
+        <div class="surprise-intro-card">
+          <div style="font-size:2.5rem; margin-bottom:16px;">✦</div>
+          <h3 style="font-family:var(--font-serif); font-size:1.8rem; color:#fff; margin-bottom:12px;">The Core of My Universe</h3>
+          <p style="font-family:var(--font-sans); color:var(--text-secondary); max-width:540px; margin:0 auto; line-height:1.7;">
+            When darkness falls, look closely. The cosmos gathers its light to spell the one truth that will outlive time.
+          </p>
+
+          <button class="btn-unlock-surprise" id="btn-unlock-surprise" type="button">
+            Unlock The Celestial Secret
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================
+         FOOTER
+         ============================================================================ -->
+    <footer class="universe-footer">
+      <div class="footer-emblem">A Little Universe Called Kirthikha ❤️</div>
+      <div class="footer-quote">"Forever with you, my love. ♾️❤️"</div>
+      <div class="footer-copy">Crafted with infinite love • For eternity</div>
+
+      <button class="btn-back-to-top" id="btn-back-to-top" type="button">
+        ↑ Return to Cosmos
+      </button>
+    </footer>
+
+  </div>
+
+  <!-- ==============================================================================
+       FULLSCREEN CINEMATIC SURPRISE OVERLAY
+       ============================================================================== -->
+  <div class="final-surprise-overlay" id="final-surprise-overlay">
+    <canvas id="surprise-heart-canvas"></canvas>
+    
+    <button class="surprise-close-btn" id="surprise-close-btn" type="button">
+      ✕ Return to Universe
+    </button>
+
+    <div class="surprise-cinematic-stage">
+      <div class="surprise-text-sequence">
+        <p class="surprise-line" id="surprise-line-1">
+          "Among all the things life could have given me,<br>
+          I'm happiest that it gave me you."
+        </p>
+
+        <p class="surprise-line" id="surprise-line-2">
+          "You're my favourite coincidence,<br>
+          my sweetest blessing,<br>
+          and my little universe."
+        </p>
+
+        <h2 class="surprise-line surprise-love-climax" id="surprise-line-3">
+          I LOVE YOU, KIRTHIKHA. ❤️
+        </h2>
+      </div>
+
+      <div class="infinity-animation-wrapper" id="infinity-wrapper">
+        <svg class="infinity-svg" viewBox="0 0 100 50">
+          <path d="M25,25 C10,10 0,25 0,25 C0,25 10,40 25,25 C40,10 60,10 75,25 C90,40 100,25 100,25 C100,25 90,10 75,25 C60,40 40,40 25,25 Z"/>
+        </svg>
+        <span style="font-family:var(--font-serif-display); font-size:0.8rem; letter-spacing:4px; text-transform:uppercase; color:var(--text-silver);">
+          Eternal &amp; Infinite
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================================================================
+       MODALS
+       ============================================================================== -->
+  <!-- 340 Languages Modal -->
+  <div class="universe-modal" id="languages-modal">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      <h3 style="font-family:var(--font-serif); font-size:1.8rem; margin-bottom:12px; color:#fff;">All 340 Languages of Love</h3>
+      <p style="font-family:var(--font-sans); color:var(--text-secondary); margin-bottom:20px; font-size:0.92rem;">
+        Search or click on any language to reveal how "I love you" echoes across the world.
+      </p>
+      <input type="text" class="lang-search-input" id="lang-search-input" placeholder="Search by language, script, or region (e.g., Tamil, French, East Asia)...">
+      <div class="all-languages-grid" id="languages-list-grid"></div>
+    </div>
+  </div>
+
+  <!-- 100 Reasons Modal -->
+  <div class="universe-modal" id="reasons-modal">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      <h3 style="font-family:var(--font-serif); font-size:1.8rem; margin-bottom:12px; color:#fff;">100 Reasons Archive</h3>
+      <p style="font-family:var(--font-sans); color:var(--text-secondary); margin-bottom:20px; font-size:0.92rem;">
+        Click any reason note to jump directly to it.
+      </p>
+      <div class="all-reasons-grid" id="reasons-list-grid"></div>
+    </div>
+  </div>
+
+  <!-- Memory Lightbox Modal -->
+  <div class="universe-modal" id="lightbox-modal">
+    <div class="modal-content-card lightbox-card">
+      <button class="modal-close-btn" aria-label="Close lightbox">✕</button>
+      <div class="lightbox-image-holder">
+        <img src="" alt="" id="lightbox-img">
+      </div>
+      <div class="lightbox-info">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+          <span style="font-family:var(--font-serif-display); font-size:0.75rem; letter-spacing:3px; color:var(--text-silver); text-transform:uppercase;" id="lightbox-date">Date</span>
+          <div style="display:flex; gap:8px;">
+            <button class="btn-icon" id="btn-lightbox-prev" title="Previous Image">←</button>
+            <button class="btn-icon" id="btn-lightbox-next" title="Next Image">→</button>
+          </div>
+        </div>
+        <h3 style="font-family:var(--font-serif); font-size:1.6rem; color:#fff; margin-bottom:10px;" id="lightbox-title">Memory Title</h3>
+        <p style="font-family:var(--font-sans); color:var(--text-secondary); line-height:1.7;" id="lightbox-desc">Memory Description</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Comfort Gentle Note Modal -->
+  <div class="universe-modal" id="comfort-modal">
+    <div class="modal-content-card" style="max-width:540px;">
+      <button class="modal-close-btn" aria-label="Close note">✕</button>
+      <div style="font-size:2rem; margin-bottom:12px;">🫂</div>
+      <h3 style="font-family:var(--font-serif); font-size:1.6rem; color:#fff; margin-bottom:14px;" id="comfort-modal-title">Gentle Comfort</h3>
+      <p style="font-family:var(--font-sans); font-size:1.05rem; line-height:1.8; color:var(--text-silver-bright);" id="comfort-modal-body">
+        Comfort message content.
+      </p>
+    </div>
+  </div>
+
+  <!-- JavaScript Datasets & Engine Scripts -->
+  <script src="js/languages.js"></script>
+  <script src="js/reasons.js"></script>
+  <script src="js/memories.js"></script>
+  <script src="js/letter.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

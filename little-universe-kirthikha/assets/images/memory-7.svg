@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07070a"/>
+      <stop offset="50%" stop-color="#12131b"/>
+      <stop offset="100%" stop-color="#040406"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg7)"/>
+  <!-- Little pot / kitchen steaming dish -->
+  <path d="M 330 310 C 330 370 470 370 470 310 Z" fill="none" stroke="#d5d5de" stroke-width="2.5"/>
+  <line x1="310" y1="310" x2="490" y2="310" stroke="#d5d5de" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 370 290 Q 400 270 430 290" fill="none" stroke="#d5d5de" stroke-width="2"/>
+  <!-- Sweet Panniyaram delicacy silhouette circles -->
+  <circle cx="370" cy="335" r="14" fill="rgba(255,255,255,0.15)" stroke="#c8c8d0" stroke-width="1.5"/>
+  <circle cx="400" cy="340" r="16" fill="rgba(255,255,255,0.2)" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="430" cy="335" r="14" fill="rgba(255,255,255,0.15)" stroke="#c8c8d0" stroke-width="1.5"/>
+  <text x="400" y="440" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="18" fill="#e0e0e8" letter-spacing="3">COOKING &amp; SWEET PANNIYARAM</text>
+  <text x="400" y="468" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#888894" letter-spacing="2">OUR SILLY KITCHEN ADVENTURES</text>
+</svg>

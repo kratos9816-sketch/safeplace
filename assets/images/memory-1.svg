@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08080c"/>
+      <stop offset="60%" stop-color="#10111a"/>
+      <stop offset="100%" stop-color="#181a24"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="50%" stop-color="#c0c0c0" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur1">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg1)"/>
+  <circle cx="400" cy="240" r="260" fill="url(#glow1)"/>
+  <!-- Stars -->
+  <g fill="#ffffff" opacity="0.75">
+    <circle cx="120" cy="80" r="1.5"/>
+    <circle cx="280" cy="140" r="2"/>
+    <circle cx="680" cy="100" r="1.5"/>
+    <circle cx="520" cy="70" r="2.5"/>
+    <circle cx="220" cy="260" r="1"/>
+    <circle cx="620" cy="220" r="1.5"/>
+    <circle cx="380" cy="110" r="2"/>
+    <circle cx="440" cy="170" r="1"/>
+  </g>
+  <!-- Constellation lines -->
+  <path d="M 280 140 L 380 110 L 520 70 L 620 220" stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-dasharray="3,3" fill="none"/>
+  <!-- Moon -->
+  <circle cx="400" cy="240" r="48" fill="#e8e8ea" opacity="0.9"/>
+  <circle cx="418" cy="232" r="44" fill="#10111a"/>
+  <!-- Subtle silhouette mountain -->
+  <path d="M 0 600 L 0 490 Q 200 420 400 470 T 800 480 L 800 600 Z" fill="#040406"/>
+  <!-- Couple silhouette under the moon -->
+  <circle cx="392" cy="465" r="9" fill="#0e0f14"/>
+  <circle cx="408" cy="468" r="8" fill="#0e0f14"/>
+  <path d="M 382 495 C 382 478 402 478 402 495 Z" fill="#0e0f14"/>
+  <path d="M 400 495 C 400 480 418 480 418 495 Z" fill="#0e0f14"/>
+  <text x="400" y="555" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="17" fill="#c0c0c0" letter-spacing="4">THE DAY OUR ORBITS ALIGNED</text>
+  <text x="400" y="578" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#70707a" letter-spacing="2">WHERE OUR UNIVERSE BEGAN</text>
+</svg>

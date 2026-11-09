@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="60%" stop-color="#14141e"/>
+      <stop offset="100%" stop-color="#07070a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg2)"/>
+  <!-- Soft glow -->
+  <circle cx="400" cy="300" r="200" fill="rgba(255,255,255,0.04)"/>
+  <!-- Two steaming cups -->
+  <path d="M 310 330 C 310 380 390 380 390 330 Z" fill="none" stroke="#d0d0d8" stroke-width="2.5"/>
+  <path d="M 410 330 C 410 380 490 380 490 330 Z" fill="none" stroke="#d0d0d8" stroke-width="2.5"/>
+  <!-- Handles -->
+  <path d="M 390 340 C 405 340 405 365 390 365" fill="none" stroke="#d0d0d8" stroke-width="2"/>
+  <path d="M 490 340 C 505 340 505 365 490 365" fill="none" stroke="#d0d0d8" stroke-width="2"/>
+  <!-- Steam lines with heart shape in middle -->
+  <path d="M 350 310 C 340 280 360 250 345 220" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <path d="M 450 310 C 460 280 440 250 455 220" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <path d="M 400 240 C 385 220 365 240 400 270 C 435 240 415 220 400 240 Z" fill="rgba(255,255,255,0.15)"/>
+  <!-- Star accents -->
+  <circle cx="200" cy="180" r="1.5" fill="#fff"/>
+  <circle cx="600" cy="190" r="1.5" fill="#fff"/>
+  <text x="400" y="440" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="18" fill="#e0e0e8" letter-spacing="3">HOURS TURNED TO SECONDS</text>
+  <text x="400" y="468" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#888894" letter-spacing="2">LATE NIGHT TALKS &amp; ENDLESS LAUGHTER</text>
+</svg>

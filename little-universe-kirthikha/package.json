@@ -1,0 +1,19 @@
+{
+  "name": "little-universe-kirthikha",
+  "version": "1.0.0",
+  "description": "A Little Universe Called Kirthikha ❤️ - Cinematic romantic interactive universe",
+  "main": "index.html",
+  "scripts": {
+    "dev": "node dev-server.js",
+    "start": "node dev-server.js",
+    "serve": "node dev-server.js"
+  },
+  "keywords": [
+    "romantic-website",
+    "interactive",
+    "cinematic",
+    "universe"
+  ],
+  "author": "Aghil",
+  "license": "ISC"
+}
